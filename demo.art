@@ -3,9 +3,8 @@ posts: read.json "./posts.json"
 allPostIDs: map.with:'i posts 'p [
     #[
         "_id": get p "_id",
-        "index": i,
+        "_index": i,
     ]
 ]
-
 
 print write.json ø allPostIDs
